@@ -1,0 +1,168 @@
+{%include "blog/header.html" %}
+{%load static%}
+
+
+
+
+  <div class="container main-content">
+
+  <div class="block news">
+    <h3>Новости</h3>
+{%for post in posts %}
+<p><a href="{% url 'post_single_url' slug=post.slug %}"><b>{{post.date_pub}}</b> | {{post.title}}</a></p>
+{%endfor%}
+<a href="{% url 'news_url' %}"><p style="text-transform: uppercase;"><b>смотреть все...</b></p></a>
+
+  </div>
+
+  <div class="block buttons">
+
+  <div class="buttons-grid">
+    <div class="button" id="lk">
+    <a href="">
+      <div class="img-container">
+        <img src="{% static 'img/user.png'%}" alt="">
+      </div>
+      <p>Личный кабинет</p>
+      </a>
+    </div>
+    <div class="button" id="pay">
+    <a href="">
+      <div class="img-container">
+        <img src="{% static 'img/oplata.png'%}" alt="">
+      </div>
+      <p>Оплата онлайн</p>
+      </a>
+    </div>
+    <div class="button" id="talk">
+    <a href="">
+      <div class="img-container">
+        <img src="{% static 'img/svyaz.png'%}" alt="">
+      </div>
+      <p>Оставить обращение</p>
+      </a>
+    </div>
+
+  </div>
+
+  </div>
+  <div class="block sidebar-wateroff ">
+    <h3><span style="color: red;">Важно!</span> Информация об отключении ХВС</h3>
+    <div class="grid-wateroff">
+    {% for post in pnhvs %}
+
+    {% include "blog/post-hvs.html" %}
+
+  {%endfor%}
+  </div>
+</div>
+<div class="block sidebar-contacts">
+<h3>Адреса и телефоны точек обслуживания абонентов</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="main">
+        <div class="container">
+<div class="news">
+<div class="grid">
+{% for post in posts.object_list %}
+
+{% include "blog/post.html" %}
+
+{%endfor%}
+
+</div>
+<nav  aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+
+    </li>
+    {% for n in posts.paginator.page_range %}
+      {% if posts.number == n %}
+      <li class="page-item active"><a class="page-link" href="?page={{n}}">{{n}}</a></li>
+      {%else%}
+
+
+    <li class="page-item"><a class="page-link" href="?page={{n}}">{{n}}</a></li>
+    {%endif%}
+    {%endfor%}
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+
+
+  <div class="sidebar" id="right-1">
+    <h1>информация об отключениях хвс</h1>
+    {% for post in pnhvs %}
+
+    {% include "blog/post-hvs.html" %}
+
+  {%endfor%}
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

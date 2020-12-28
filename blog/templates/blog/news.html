@@ -1,0 +1,13 @@
+{%include "blog/header.html" %}
+
+{%load static%}
+
+<div class="container news-content">
+  <div class="news-grid">
+{% for post in posts %}
+
+{%include "blog/post.html"%}
+
+{%endfor%}
+</div>
+</div>

@@ -1,0 +1,19 @@
+{%extends 'blog/base.html'%}
+{% block content%}
+<div id="psc" class="container">
+  <div class="ps-header" id="page-s">
+
+
+    <p id="pstitle">{{page.title}}</p>
+  </div>
+
+<p id="psbody">{% autoescape off %}{{page.body}}{%endautoescape%}</p>
+
+
+</div>
+
+
+{%endblock%}
+
+{%block infogrid%}
+{%endblock%}

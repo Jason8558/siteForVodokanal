@@ -1,0 +1,33 @@
+{%include "blog/header.html" %}
+
+{%load static%}
+
+<div class="container post-single-content">
+
+  <div class="ps-grid">
+
+
+
+    <div class="psimage">
+      {% if post.image %}
+        <img src="{{post.image.url|safe}}" alt="">
+        {%else%}
+        <img src="{% static 'img/base_img.jpg'%}" alt="">
+        {% endif%}
+    </div>
+    <p class="pstitle">{{post.title}}</p>
+
+
+
+<div class="post-single-body">
+<p>{% autoescape off %}{{post.body}}{%endautoescape%}</p>
+</div>
+<div class="psfooter">
+<p id="pscat">Категория:
+{% for category in post.category.all %}
+{{ category.title }}
+{%endfor%}</p>
+</div>
+</div>
+
+</div>

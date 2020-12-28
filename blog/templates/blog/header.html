@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'css/base.css'%}">
+      <link rel="stylesheet" href="{% static 'css/test.css'%}">
+       <link rel="shortcut icon" href="{% static 'img/favicon.ico'%}" type="image/x-icon">
+    <meta charset="utf-8">
+    <title> Камчатский водоканал </title>
+
+  </head>
+
+  <header>
+<div class="container">
+<div class="branding">
+  <div class="logo-container">
+  <a href="/blog"><img class="logo" src="{% static 'img/logo2.png' %}" alt=""></a>
+  </div>
+  <div class="title">
+    <p>Краевое государственное унитарное предприятие</p>
+    <p id="title_2">Камчатский водоканал</p>
+  </div>
+</div>
+
+<nav class="menu">
+  <ul>
+    {% for item in menu %}
+    <li><a href="{{item.url}}">{{item.name}}</a></li>
+    {% endfor %}
+  </ul>
+
+</nav>
+
+
+{% load mptt_tags %}
+<!-- <ul class="nav">
+
+
+
+{% include "blog/menu.html" %}
+
+
+</ul> -->
+
+
+  </header>

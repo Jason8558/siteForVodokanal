@@ -1,0 +1,7 @@
+{%extends 'blog/base.html'%}
+{% block content%}
+<p>{{page.title}}</p>
+<p>{% autoescape off %}{{page.body}}{%endautoescape%}</p>
+<p>{{page.date_pub}}</p>
+
+{%endblock%}

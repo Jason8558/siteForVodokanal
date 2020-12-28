@@ -1,0 +1,38 @@
+{%extends 'blog/base.html'%}
+{%load static%}
+{% block content%}
+<div id="psc" class="container">
+
+  <div class="ps-grid">
+
+
+
+    <div class="psimage">
+      {% if post.image %}
+        <img src="{{post.image.url|safe}}" alt="">
+        {%else%}
+        <img src="{% static 'img/base_img.jpg'%}" alt="">
+        {% endif%}
+    </div>
+    <p class="pstitle">{{post.title}}</p>
+
+
+
+<div class="psbody">
+<p>{% autoescape off %}{{post.body}}{%endautoescape%}</p>
+</div>
+<div class="psfooter">
+<p id="pscat">Категория:
+{% for category in post.category.all %}
+{{ category.title }}
+{%endfor%}</p>
+</div>
+</div>
+
+</div>
+
+
+{%block pagination%}
+{%endblock%}
+
+{%endblock%}

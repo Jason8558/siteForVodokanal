@@ -1,0 +1,442 @@
+{% load staticfiles%}
+
+html {
+  /* background-image: url('../img/background.jpg'); */
+  /* background-repeat: no-repeat; */
+  background: linear-gradient(180deg, #bce6ff, #53a6d8, #015c92 ) no-repeat;
+  background-attachment: fixed;
+}
+
+.branding {
+
+display: block;
+
+float: left;
+width: 50%
+}
+
+.branding  {
+  float: left;
+  width: 50%;
+}
+.logo {
+    width: 5%;
+    float: left;
+    padding: 1%;
+}
+
+.logo-container {
+
+}
+
+header {
+  width: 100%;
+  display: block;
+  /* padding: 1%; */
+  /* margin-bottom: 0%; */
+  height: 6rem;
+}
+
+.branding {
+  width: 100%;
+}
+
+.title {
+float: left;
+margin-top: 1%;
+margin-left: 2%;
+font-family: nk89;
+font-size: 148%;
+}
+
+.title p{
+margin: 0;
+font-size: 1.3rem;
+}
+
+#title_2 {
+text-transform: uppercase;
+letter-spacing: 5px;
+word-spacing: 9px;
+}
+
+nav {float: left;width: 98%;background: #7ac8ff;margin-bottom: 2%;padding: 1%;box-shadow: 0px 0px 5px 2px #000000;}
+
+nav ul {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 1fr;
+padding: 0;
+list-style: none;
+justify-items: center;
+margin: 0;
+align-items: center;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: roboto;
+  font-size: 0.89rem;
+}
+
+nav a:hover {
+
+  color: white;
+  font-weight: bold;
+
+
+}
+
+.sidebar
+{float: left;
+  box-shadow: 0px 0px 4px 2px #0000008f;
+  padding: 17px;
+  border-radius: 7px;
+  background: white;
+
+
+}
+
+#right-1 {
+border: solid red 2px;
+grid-area: sidebar1;
+height: fit-content;
+}
+
+
+
+.news {
+  grid-area: news;
+}
+
+.container h1 {
+  font-family: nk89;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  padding-bottom: 5px;
+  border-bottom: solid 1px;
+}
+
+.container > .pagination {
+  grid-area: paging;
+
+}
+
+.grid {
+  grid-area: news;
+  display: grid;
+  grid-template-rows: repeat(2, 0fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+}
+
+
+
+
+
+
+
+.post {float: left;/* border: 1px solid #ff0a0a; */margin-top: 1%;padding: 3%;background: #7ac8ff;/* border-radius: 7px; *//* box-shadow: 0px 0px 4px 2px #0000008f; *//* height: 94%; */font-size: 0.9rem;/* width: 58%; */box-shadow: 0px 0px 6px 2px black;}
+
+#right-1 > .post {
+background: #7ac8ff;
+float: left;
+margin-top: 2%;
+padding: 1%;
+border-radius: 7px;
+box-shadow: 0px 4px 3px -1px #0000008f;
+width: 100%;
+}
+
+.sidebar h1 {
+  font-family: nk89;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 3vh;
+  text-align: center;
+  /* background: #f0f8ff; */
+  width: 100%;
+  float: left;
+  border-bottom: solid 1px;
+  padding-bottom: 5px;
+}
+
+
+
+.container2 {
+  /* border: solid #f00; */
+  float: left;
+  width: 64%;
+  height: 100vh;
+  padding: 1%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "hvs other other"
+    "hvs other other";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7px;
+}
+
+
+.sidebar-right-2 {
+  grid-area: point_obls;
+  /* background: #7ac8ff; */
+  /* border-radius: 7px; */
+  /* box-shadow: 0px 4px 3px -1px #0000008f; */
+}
+
+.sidebar-right-2 h1 {
+  font-family: nk89;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 3vh;
+      text-align: center;
+      /* background: #f0f8ff; */
+      width: 100%;
+      float: left;
+
+}
+
+
+
+.post img {height: 100%;width: 100%;}
+
+.post .post-image {
+  height: 132px;
+  width: 100%;
+  float: left;
+  margin-top: 1%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.post p {
+font-family: roboto !important;
+margin: 0;
+}
+
+.post a {
+width: 94%;
+float: left;
+text-align: center;
+position: static;
+/* object-position: bottom; */
+padding: 3%;
+/* border: #fff solid 1px; */
+/* background: #87cefa52; */
+text-decoration: none;
+color: black;
+font-family: roboto;
+/* margin-top: 12%; */
+font-size: 10pt;
+transition: 0.1s;
+}
+
+.post a:hover {
+color: #154eb5;
+/* box-shadow: 0px 0px 4px 0px blue; */
+transition: 0.1s;
+}
+
+#ptitle {
+    width: 100%;
+    float: left;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-weight: 600;
+
+    padding: 4px;
+    font-style: normal;
+}
+
+#pbody {
+    float: left;
+    width: 100%;
+    line-break: 1;
+    line-height: 3vh;
+    font-family: roboto !important;
+    font-style: normal;
+    color: black;
+}
+
+#pdate {
+    float: left;
+    width: 100%;
+    border-bottom: 1px #989696 solid;
+    margin-bottom: 1%;
+}
+
+.post-single-container {
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+background: white;
+padding: 1%;
+box-shadow: 0px 0px 2px 1px;
+float: left;
+}
+
+.ps-grid {
+  display: grid;
+  grid-template-areas:
+    "title title title title img img"
+    "body body body body body body"
+    "footer footer footer footer footer footer";
+  grid-template-rows: repeat(3, 0fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 17px;
+  /* margin: 0; */
+  float: left;
+  background: white;
+  padding: 1%;
+  box-shadow: 0px 0px 6px 2px black;
+}
+
+.psimage {grid-area: img;float: left;box-shadow: 0px 0px 6px 2px #000000;border: 1px solid #00000059;height: 200px;}
+
+.psimage img {
+width: 100%;
+height: 100%;
+}
+
+.pstitle {
+float: left;
+grid-area: title;
+margin-left: 1%;
+text-align: center;
+font-size: 24pt;
+font-family: roboto;
+}
+
+
+.post-single-body  {
+grid-area: body;
+font-family: roboto !important;
+}
+
+.post-single-body p {
+font-size: 1.3rem;
+}
+
+.psfooter {
+  grid-area: footer;
+}
+
+.woff_date {
+    padding: 2%;
+    border-bottom: solid 1px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.woff_city {
+    text-transform: uppercase;
+    border-bottom: solid 1px;
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.pagination {
+  width: 100%;
+  float: left;
+  display: inline;
+
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+  text-align: center;
+  padding: 1%;
+  background: #29a8df;
+  width: 52%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+  margin-top: 1%;
+  /* margin-bottom: 3%; */
+  /* border-radius: 16px; */
+  font-family: roboto;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* border-block-start: 1px red solid; */
+}
+
+summary:focus {
+  outline: none;
+}
+
+.pagination .active {
+  background: white;
+}
+
+.pagination li {
+  width: max-content;
+  float: left;
+  list-style: none;
+  /* margin-left: 2%; */
+  padding: 5px;
+  background: #7ac8ff;
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.pagination li:last-child {
+
+  border-right: solid 1px black;
+
+}
+
+.pagination li a{
+text-decoration: none;
+color: black;
+}
+
+
+
+.sidebar-right {
+/* border: solid red 1px; */
+}
+
+
+footer {
+font-family: roboto;
+margin-top: 1%;
+float: left;
+width: 98%;
+border-top: solid #00000057 1px;
+padding: 7px;
+background: #28a9e27a;
+/* position: absolute; */
+/* top: 101%; */
+}
+
+  @font-face{
+
+  font-family: 'nk89';
+
+  src: url(../fonts/nk89.otf);
+  }
+
+  @font-face{
+
+  font-family: 'roboto';
+
+  src: url(../fonts/Roboto.ttf);
+  }
